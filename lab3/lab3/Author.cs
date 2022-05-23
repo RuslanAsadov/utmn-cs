@@ -9,10 +9,9 @@ namespace lab3
     public class Author
     {
         public string Id { get; set; }
-        public string FullName { get; set; }
+        public string Name { get; set; }
         public DateTime BirthDate { get; set; }
-        public string PlaceOfWork { get; set; }
-        public int CitationIndex { get; set; }
-        public string ScienceDegree { get; set; }
-    }
+        public string WorkplaceId { get; set; }
+        public string ScienceDegreeId { get; set; }
+}
 }

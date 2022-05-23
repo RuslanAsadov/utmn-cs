@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6510AB94-7B16-4249-B171-112A23A4CC59}</ProjectGuid>
+    <ProjectGuid>{F2BAFF38-ECF1-4692-9458-3BA8329FA6E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>lab3</RootNamespace>
     <AssemblyName>lab3</AssemblyName>
@@ -36,6 +36,9 @@
     <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleDataGridViewPaging">
+      <HintPath>..\..\..\..\Downloads\SimpleDataGridViewPaging.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,45 +53,139 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Author.cs" />
-    <Compile Include="FormAuthor.cs">
+    <Compile Include="CreateGenre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAuthor.Designer.cs">
-      <DependentUpon>FormAuthor.cs</DependentUpon>
+    <Compile Include="CreateGenre.Designer.cs">
+      <DependentUpon>CreateGenre.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPublication.cs">
+    <Compile Include="Genres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPublication.Designer.cs">
-      <DependentUpon>FormPublication.cs</DependentUpon>
+    <Compile Include="Genres.Designer.cs">
+      <DependentUpon>Genres.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMain.cs">
+    <Compile Include="CreateScienceDegree.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="CreateScienceDegree.Designer.cs">
+      <DependentUpon>CreateScienceDegree.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPublisher.cs">
+    <Compile Include="CreateWorkplace.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPublisher.Designer.cs">
-      <DependentUpon>FormPublisher.cs</DependentUpon>
+    <Compile Include="CreateWorkplace.Designer.cs">
+      <DependentUpon>CreateWorkplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUdk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUdk.Designer.cs">
+      <DependentUpon>CreateUdk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScienceDegrees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScienceDegrees.Designer.cs">
+      <DependentUpon>ScienceDegrees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workplaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workplaces.Designer.cs">
+      <DependentUpon>Workplaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Udks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Udks.Designer.cs">
+      <DependentUpon>Udks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publishers.Designer.cs">
+      <DependentUpon>Publishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAuthor.Designer.cs">
+      <DependentUpon>CreateAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePublication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePublication.Designer.cs">
+      <DependentUpon>CreatePublication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePublisher.Designer.cs">
+      <DependentUpon>CreatePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authors.Designer.cs">
+      <DependentUpon>Authors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genre.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Publication.cs" />
+    <Compile Include="UDK.cs" />
+    <Compile Include="Work.cs" />
     <Compile Include="Publisher.cs" />
-    <EmbeddedResource Include="FormAuthor.resx">
-      <DependentUpon>FormAuthor.cs</DependentUpon>
+    <Compile Include="ScienceDegree.cs" />
+    <Compile Include="Workplace.cs" />
+    <EmbeddedResource Include="CreateGenre.resx">
+      <DependentUpon>CreateGenre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <EmbeddedResource Include="Genres.resx">
+      <DependentUpon>Genres.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPublication.resx">
-      <DependentUpon>FormPublication.cs</DependentUpon>
+    <EmbeddedResource Include="CreateScienceDegree.resx">
+      <DependentUpon>CreateScienceDegree.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPublisher.resx">
-      <DependentUpon>FormPublisher.cs</DependentUpon>
+    <EmbeddedResource Include="CreateWorkplace.resx">
+      <DependentUpon>CreateWorkplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUdk.resx">
+      <DependentUpon>CreateUdk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScienceDegrees.resx">
+      <DependentUpon>ScienceDegrees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workplaces.resx">
+      <DependentUpon>Workplaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Udks.resx">
+      <DependentUpon>Udks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Publishers.resx">
+      <DependentUpon>Publishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAuthor.resx">
+      <DependentUpon>CreateAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePublication.resx">
+      <DependentUpon>CreatePublication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePublisher.resx">
+      <DependentUpon>CreatePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authors.resx">
+      <DependentUpon>Authors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,7 +197,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Author.datasource" />
+    <None Include="Properties\DataSources\Authors.datasource" />
+    <None Include="Properties\DataSources\Genre.datasource" />
     <None Include="Properties\DataSources\Publication.datasource" />
+    <None Include="Properties\DataSources\Publisher.datasource" />
+    <None Include="Properties\DataSources\ScienceDegree.datasource" />
+    <None Include="Properties\DataSources\UDK.datasource" />
+    <None Include="Properties\DataSources\Workplace.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
